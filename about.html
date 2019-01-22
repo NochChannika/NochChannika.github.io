@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset="utf-8">
+<title>Restaurant</title>
+<link rel="stylesheet" type="text/css" href="css/about.css"/>
+    
+</head>
+<body>
+    <header id="header-container">
+
+        <div id="header-logo">
+            <img src='img/logo.png' >
+        </div>
+
+
+        <nav id="nav-container">
+
+                <ul>
+                    <li><a href="index.html"><b>Welcome</b></a></li>
+                    <li class="active"><b>About Us</b></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="location.html"><b>Location</b></a></li>
+                    <li class="reservation"><a href="reservation.html"><b>Reservation</b></a></li>
+
+
+                    
+                </ul>
+
+        </nav>
+
+    </header>
+    <div id="banner-container">
+        <div>
+            <div>
+                <h1>About Us</h1>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="row space-above relative-container">
+    
+        <div class="col-6 remove-line-height">
+            <img class="width-100-percents" src="amok-h.jpg"/>
+        </div>
+        
+        <div class="col-6 relative-container-child">
+            
+            <p class="text">
+                Craving some delicious khmer and western food? No matter what kind of meal you have in mind, Le Cambodge Restaurant is ready to prepare it for you.Since 2000, Le Cambodge Restaurant has been the go-to diner for residents of Phnom Penh. Our diner serves breakfast all day, in addition to wholesome and flavorful dining options for lunch and dinner. From burgers to salads, seafood to pastas, you’ll find all kinds of hearty meals prepared fresh at Le Cambodge Restaurant. Our diner also has a full bakery with delicious baked goods and other treats, including our famous cheesecake. Sounds delicious, right?The Spot Restaurant is open daily from 5 a.m. to 11 p.m. We’re here to serve you the best food around, whenever you’re looking for a great restaurant in Phnom Penh.
+            </p>
+        
+        </div>
+     
+    </div>
+       
+
+    <div class="beforefooter">
+        <div>
+            <h1>Le Cambodge Restaurant</h1>
+        </div>
+        <div>
+            <p1>#11C,Str 41 along the riverside</p1>
+        </div>
+        <div>
+            <p2>Chak Tuk Mok, Duan Penh, Phnom Penh City</p2>
+        </div>
+        <div>
+            <p3>(855) 96 419 742 4</p3>
+        </div>
+        <div>
+            <p4>Eureka@Lecambodge-restaurant.com</p4>
+        </div>
+    </div>
+
+    <footer class="row">
+
+        <div class="col-s-6 text-to-left">
+            @copyright.Le Cambodge Restaurant
+        </div>
+        
+        <div class="col-s-6 text-to-right">
+            Contact Us
+        </div>
+        
+        
+        
+    </footer>
+    
+    
+</body>
+
+<script>
+
+
+
+window.addEventListener("scroll", function(){
+    var headerContainer = document.getElementById("header-container");
+   
+    var doc = document.documentElement;
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+    if(top > headerContainer.offsetHeight){
+        headerContainer.classList.remove("scroll-up-header");
+        headerContainer.classList.add("scroll-down-header");
+    }else{
+        headerContainer.classList.add("scroll-up-header");
+        headerContainer.classList.remove("scroll-down-header");
+    }
+   
+});
+
+
+</script>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset="utf-8">
+<title>Restaurant</title>
+<link rel="stylesheet" type="text/css" href="css/reservation.css"/>
+
+    
+</head>
+<body>
+    <header id="header-container">
+
+        <div id="header-logo">
+            <img src='img/logo.png' >
+        </div>
+
+
+        <nav id="nav-container">
+
+                <ul>
+                    <li><a href="index.html"><b>Welcome</b></a></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="location.html"><b>Location</b></a></li>
+                    <li class="reservation"><a href="reservation.html"><b>Reservation</b></a></li>
+
+
+                    
+                </ul>
+
+        </nav>
+
+    </header>
+    <div id="banner-container">
+        <div>
+            <div>
+                <h1>Make </h1>
+            
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        
+        
+        <div class="col-12 reservation-container">
+            
+             <h1>BOOK NOW</h1>
+             <p>We will combine your order you eamil, phone</p>
+            
+            <div class="contact-form-container">
+            
+                <form method="post" autocomplete="on" id="contact-form">
+
+
+                    <div>
+                        <label for="firstname">Name:</label> <input placeholder="enter your first name" 
+                        type="text" id="firstname" name="user_firstname">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label> <input placeholder="enter your email"
+                         type="text" id="email" name="user_email">
+                    </div>
+
+                    <div>
+                            <label for="date">Date:</label> <input placeholder="enter your date"
+                             type="text" id="date" name="user_date">
+                    </div>
+                    
+                     <div>
+                            <label for="time">Time:</label> <input placeholder="enter your time"
+                             type="text" id="time" name="user_time">
+                    </div>
+                    
+                    <div>
+                            <label for="phone">Phone:</label> <input placeholder="enter your phone"
+                             type="text" id="phone" name="user_phone">
+                    </div>
+
+
+
+                    <div>
+                            <button type="submit">Submit</button>
+                    </div>
+
+
+
+                </form>
+                
+            
+            </div>
+            
+            
+            <h1>ORDER BY PHONE</h1>
+            <p>Prefer to make your reservation via phone?</p>
+            <p>Give us a call</p>
+            <p>Phone: _________</p>
+            
+            <div class="image-container">
+                
+                <img src="img/Dining_2017-2.jpg">
+            
+            </div>
+            
+        </div>
+    
+            
+    
+    </div>
+
+    
+    
+    <div class="beforefooter">
+        <div>
+            <h1>Le Cambodge Restaurant</h1>
+        </div>
+        <div>
+            <p1>#11C,Str 41 along the riverside</p1>
+        </div>
+        <div>
+            <p2>Chak Tuk Mok, Duan Penh, Phnom Penh City</p2>
+        </div>
+        <div>
+            <p3>(855) 96 419 742 4</p3>
+        </div>
+        <div>
+            <p4>Eureka@Lecambodge-restaurant.com</p4>
+        </div>
+    </div>
+
+    <footer class="row">
+
+        <div class="col-s-6 text-to-left">
+            @copyright.Le Cambodge Restaurant
+        </div>
+        
+        <div class="col-s-6 text-to-right">
+            Contact Us
+        </div>
+        
+        
+        
+    </footer>
+    
+    
+</body>
+
+<script>
+
+
+
+window.addEventListener("scroll", function(){
+    var headerContainer = document.getElementById("header-container");
+   
+    var doc = document.documentElement;
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+    if(top > headerContainer.offsetHeight){
+        headerContainer.classList.remove("scroll-up-header");
+        headerContainer.classList.add("scroll-down-header");
+    }else{
+        headerContainer.classList.add("scroll-up-header");
+        headerContainer.classList.remove("scroll-down-header");
+    }
+   
+});
+
+
+</script>
+
+</html>
