@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset="utf-8">
+<title>Restaurant</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    
+</head>
+<body>
+    <header id="header-container">
+
+        <div id="header-logo">
+            <img src='img/logo.png' >
+        </div>
+
+
+        <nav id="nav-container">
+
+                <ul>
+                    <li class="active"><b>Welcome</b></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="location.html"><b>Location</b></a></li>
+                    <li class="reservation"><a href="reservation.html"><b>Reservation</b></a></li>
+
+
+                    
+                </ul>
+
+        </nav>
+
+    </header>
+    <div id="banner-container">
+        <div>
+            <div>
+                <h1>Welcome to Le Cambodge Restaurant</h1>
+                <p><b>The Best Place You Can Enjoy the Best Food</b></p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row space-above relative-container">
+    
+        <div class="col-6">
+            <img class="width-100-percents" src="prawns-h.jpg"/>
+        </div>
+        
+        <div class="col-6 relative-container-child">
+            
+            <div>
+                <p class="text">
+                Le Cambodge Restaurant ocated in the Phnom Penh City. The restaurant overlooks one of the most beautiful in Phnom Penh. Located here since 2000, it just underwent a full-scale renovation and redesign.The restaurant has been owned by Noch Channika and Restaurateur Will Guidara since 2011 and during that time it has evolved considerably, both in food and in experience. Today, the restaurant offers an eight to ten course menu in the main dining room, but guests can also visit the bar for a more abbreviated tasting menu, some light snacks, coffee or simply for a cocktail or glass of wine.
+            
+            </p>
+            </div>
+        
+        </div>
+     
+    </div>
+    
+    <div class="full-bgimg-content space-above">
+        <div>
+            <h1>Our Kitchen Team</h1>
+        </div>
+    </div>
+    
+    <div class="beforefooter">
+        <div>
+            <h1>Le Cambodge Restaurant</h1>
+        </div>
+        <div>
+            <p1>#11C,Str 41 along the riverside</p1>
+        </div>
+        <div>
+            <p2>Chak Tuk Mok, Duan Penh, Phnom Penh City</p2>
+        </div>
+        <div>
+            <p3>(855) 96 419 742 4</p3>
+        </div>
+        <div>
+            <p4>Eureka@Lecambodge-restaurant.com</p4>
+        </div>
+    </div>
+
+    <footer class="row">
+
+        <div class="col-s-6 text-to-left">
+            @copyright.Le Cambodge Restaurant
+        </div>
+        
+        <div class="col-s-6 text-to-right">
+            Contact Us
+        </div>
+        
+        
+        
+    </footer>
+    
+    
+</body>
+
+<script>
+
+
+
+window.addEventListener("scroll", function(){
+    var headerContainer = document.getElementById("header-container");
+   
+    var doc = document.documentElement;
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+    if(top > headerContainer.offsetHeight){
+        headerContainer.classList.remove("scroll-up-header");
+        headerContainer.classList.add("scroll-down-header");
+    }else{
+        headerContainer.classList.add("scroll-up-header");
+        headerContainer.classList.remove("scroll-down-header");
+    }
+   
+});
+
+
+</script>
+
+</html>
